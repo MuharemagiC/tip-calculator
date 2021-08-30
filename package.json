@@ -1,4 +1,5 @@
 {
+  "homepage": "http://muharemagic.github.io/tip-calculator",
   "name": "tip-calculator",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/*",
     "lint:fix": "eslint src/* --fix",
-    "lint:quiet": "eslint src/* --quiet"
+    "lint:quiet": "eslint src/* --quiet",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -49,6 +52,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2"
   }
 }
