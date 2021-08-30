@@ -1,0 +1,54 @@
+.Button,
+.InputButton {
+  height: 48px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  box-shadow: none;
+}
+
+.Button {
+  background: #00474b;
+  color: #ffffff;
+  transition: 0.3s ease-in;
+}
+
+.InputButton {
+  padding-right: 5px;
+  background: #f3f9fa;
+  color: #00474b;
+  text-align: right;
+  caret-color: #00474b;
+  box-sizing: border-box;
+  outline-color: #26c2ae;
+}
+
+.InputButton::placeholder {
+  text-align: center;
+  text-transform: capitalize;
+  padding-right: 10px;
+}
+
+.InputButton::-webkit-outer-spin-button,
+.InputButton::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.Button:disabled {
+  background: #26c2ae;
+  border-radius: 5px;
+  color: #00474b;
+}
+
+.Button:hover {
+  background: #9fe8df;
+  cursor: pointer;
+}
+
+.InputButton:hover {
+  cursor: pointer;
+}

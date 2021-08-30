@@ -1,0 +1,86 @@
+.AmountWrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.AmountWrapper p:first-of-type {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Text {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+.Amount {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 71px;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+
+.ResetButton {
+  background: #26c2ae;
+  border-radius: 5px;
+  height: 48px;
+  width: 80%;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+  border: none;
+  transition: 0.3s ease-in;
+}
+
+.ResetButton:hover {
+  background: #9fe8df;
+  cursor: pointer;
+}
+
+.ResetButton:disabled {
+  background-color: #0d686d;
+  color: #00474b;
+  mix-blend-mode: normal;
+  opacity: 0.35;
+}
+
+@media (min-width: 760px) and (max-width: 966px) {
+  .AmountWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Amount {
+    font-size: 35px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .AmountWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Amount {
+    font-size: 35px;
+    line-height: 30px;
+  }
+}

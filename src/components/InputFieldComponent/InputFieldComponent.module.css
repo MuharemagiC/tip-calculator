@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  position: relative;
+}
+
+.inputLabel {
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  background: #f3f9fa;
+  border-radius: 5px;
+  height: 48px;
+  box-shadow: none;
+  border: none;
+  text-align: right;
+  width: 87%;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  padding-right: 10px;
+  opacity: 0.35;
+}
+
+.input:focus {
+  opacity: 1;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.Icon {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.input:hover {
+  cursor: pointer;
+}
+
+.Error {
+  color: red;
+}
+
+@media (max-width: 760px) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .inputLabel,
+  .input {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
